@@ -1,13 +1,55 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/news/index",
+    "pages/list/index",
+    "pages/recommend/index",
+    "pages/my/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "backgroundColor": "#f1f1f1",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#2CB6A5",
+    "navigationBarTitleText": "餐厅预约等位",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "custom": false,
+    "backgroundColor": "#fefefe",
+    "color": "#999999",
+    "selectedColor": "#2CB6A5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "订座",
+        "iconPath": "/images/tabbar/home.png",
+        "selectedIconPath": "/images/tabbar/home_cur.png"
+      },
+      {
+        "pagePath": "pages/news/index",
+        "text": "本店动态",
+        "iconPath": "/images/tabbar/cate1.png",
+        "selectedIconPath": "/images/tabbar/cate1_cur.png"
+      },
+      {
+        "pagePath": "pages/recommend/index",
+        "text": "菜品推介",
+        "iconPath": "/images/tabbar/cate2.png",
+        "selectedIconPath": "/images/tabbar/cate2_cur.png"
+      },
+      {
+        "pagePath": "pages/list/index",
+        "text": "预约日历",
+        "iconPath": "/images/tabbar/day.png",
+        "selectedIconPath": "/images/tabbar/day_cur.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "/images/tabbar/my.png",
+        "selectedIconPath": "/images/tabbar/my_cur.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
