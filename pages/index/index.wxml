@@ -1,2 +1,13 @@
-<!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view class="container">
+  <l-card 
+    wx:for="list" 
+    type="primary" 
+    l-class="card" 
+    l-img-class="card-img" 
+    image="https://img1.baidu.com/it/u=3811465454,3039909959&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500" 
+    title="大桌预定（7-12人）">
+    <view class="content">
+      酒店拥有广州一流的豪华俱乐部、西餐厅、日本料理、粤菜、酒吧、*中心、spa、宴会厅、大型停车场和世界著名品牌精品店等一系列设施恭候各位贵宾的光临。
+    </view>
+  </l-card>
+</view>

@@ -1,0 +1,50 @@
+<view class="container">
+  <view class="inner-container">
+    <!-- 轮播图 -->
+    <swiper class="swiper" indicator-dots indicator-active-color="#2CB6A5" autoplay circular>
+      <block wx:for="{{items}}" wx:key="index">
+        <swiper-item>
+          <image class="swiper" src="{{item.img}}" bindtap="preview" data-src="{{item.img}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- 文字简介 -->
+    <l-collapse expand-item-id="{{['0']}}">
+      <l-collapse-item title="包房介绍" item-id="0">
+        酒店拥有广州一流的豪华俱乐部、西餐厅、日本料理、粤菜、酒吧、*中心、spa、宴会厅、大型停车场和世界著名品牌精品店等一系列设施恭候各位贵宾的光临。
+      </l-collapse-item>
+    </l-collapse>
+    <!-- 预约选项 -->
+    <form>
+      <!-- 日期选择 -->
+      <view class="cu-form-group">
+        <view class="title">日期选择</view>
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2025-09-01" bindchange="DateChange">
+          <view class="picker">
+            {{date}}
+          </view>
+        </picker>
+      </view>
+      <!-- 时间选择 -->
+      <view class="cu-form-group">
+        <view class="title">时间选择</view>
+        <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="TimeChange">
+          <view class="picker">
+            {{time}}
+          </view>
+        </picker>
+      </view>
+      <!-- 预约人数 -->
+      <view class="cu-form-group">
+        <view class="title">预约人数</view>
+        <l-counter count="1" min="1" max="10" bind:linchange="countChange"/>
+      </view>
+      <!-- 备注 -->
+      <l-textarea placeholder="说说你的备注吧..." bind:linconfirm="handleComment" bind:linblur="handleComment" />
+      <!-- 预约 -->
+      <view class="order">
+        <l-button type="success" size="long" shape="circle" bind:lintap="handleCommit">预约</l-button>
+      </view>
+    </form>
+  </view>
+</view>

@@ -1,23 +1,27 @@
 {
+  "entryPagePath": "pages/index/index",
   "pages": [
     "pages/index/index",
     "pages/news/index",
     "pages/list/index",
     "pages/recommend/index",
-    "pages/my/index"
+    "pages/my/index",
+    "pages/list-item/index"
   ],
   "window": {
-    "backgroundColor": "#f1f1f1",
-    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#2CB6A5",
-    "navigationBarTitleText": "餐厅预约等位",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "餐厅预约等位小程序",
+    "navigationStyle": "default",
+    "backgroundColor": "#f1f1f1",
+    "backgroundTextStyle": "dark"
   },
   "tabBar": {
     "custom": false,
-    "backgroundColor": "#fefefe",
     "color": "#999999",
     "selectedColor": "#2CB6A5",
+    "backgroundColor": "#fefefe",
+    "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -52,5 +56,17 @@
     ]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "l-grid": "/miniprogram_npm/lin-ui/grid/index",
+    "l-grid-item": "/miniprogram_npm/lin-ui/grid-item/index",
+    "l-price": "/miniprogram_npm/lin-ui/price/index",
+    "l-tag": "/miniprogram_npm/lin-ui/tag/index",
+    "l-loadmore": "/miniprogram_npm/lin-ui/loadmore/index",
+    "l-button": "/miniprogram_npm/lin-ui/button/index",
+    "l-card": "/miniprogram_npm/lin-ui/card/index",
+    "l-calendar": "/miniprogram_npm/lin-ui/calendar/index",
+    "l-counter": "/miniprogram_npm/lin-ui/counter/index",
+    "l-textarea": "/miniprogram_npm/lin-ui/textarea/index"
+  }
 }

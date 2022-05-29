@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "l-collapse": "/miniprogram_npm/lin-ui/collapse/index",
+    "l-collapse-item": "/miniprogram_npm/lin-ui/collapse-item/index"
+  }
+}
